@@ -1,0 +1,961 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*top-nav*/
+.top-nav{
+}
+
+/*sidebar and sidebar-btn*/
+.sidebar-btn{
+  position: fixed;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+  height: 40px;
+  width: 56px;
+  text-align: center;
+  background: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.sidebar-btn.click{
+  left: 265px;
+  position: fixed;
+}
+.sidebar-btn img{
+  max-height: 50px;
+}
+.sidebar{
+  position: fixed;
+  z-index: 1;
+  bottom: 0px; 
+  width: 250px;
+  height: 100%;
+  left: -270px;
+  line-height: 65px;
+  background: #f78989;
+  transition: left 0.4s ease;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar .blank-top{
+  height: 55px;
+  width: 250px;
+  background: #020202;
+}
+nav.sidebar ul.sidebar-options{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  background: #383838;
+}
+
+nav.sidebar ul.sidebar-options li{
+  line-height: 65px;
+}
+
+nav.sidebar ul.sidebar-options li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 15px;
+  font-weight: 550;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  
+}
+
+nav.sidebar ul.sidebar-options li a:hover{
+  background: #ff7c25;
+  width: auto;
+  border-left: 3px solid white;
+}
+
+/*Title*/
+.site-header{
+  float: left;
+  margin: 30px 0px 0px 825px;
+  max-width: 300px;
+}
+.site-header img{
+  max-width: 300px;
+}
+
+/*top-icons*/
+#nav-row li.cart div{
+  height: 60px;
+  width: 55px;
+  margin: 15px 0px 0px 0px;
+  position: relative;
+  float: right;
+  z-index: 1;
+  background-image: url(images/Cart.PNG);
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+}
+#nav-row li.home div{
+  height: 60px;
+  width: 50px;
+  margin: 10px 35px 0px 35px;
+  position: relative;
+  float: right;
+  z-index: 1;
+  background-image: url(images/Home.PNG);
+  background-repeat: no-repeat;
+  background-size: 45px 60px;
+}
+.home{
+  list-style-type: none;
+}
+.cart{
+  list-style-type: none;
+}
+
+/*horizontal-nav*/
+.horizontal-nav{
+  margin-left: 525px;
+  float: left;
+}
+.horizontal-nav li{
+  float: left;
+  margin-right: 150px;
+  list-style-type: none;
+}
+.horizontal-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/*top-black-line*/
+.top-black-line{
+  margin-top: 140px;
+  width: 100%;
+  border-bottom: black 3px solid;
+}
+
+/*orange-border*/
+.orange-border{
+  margin: -10px 0px 100px 0px;
+  width: 100%;
+  border-bottom: #ff7c25 50px solid;
+}
+
+/*item-carousel*/
+#slider {
+  margin: -60px auto;
+  margin-bottom: 75px;
+  width: 1200px;
+  height: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+#slider input[type=radio] {
+  display: none;
+}
+#slider label {
+  cursor:pointer;
+  text-decoration: none;
+  
+}
+#slides {
+  padding: 10px;
+  background: none;
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 600px;
+}
+#slides .slide {
+  width: 25%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+#slides .slide_1 {
+  background: url('images/IMG-1137.JPG') no-repeat, url('images/IMG-1138.JPG') no-repeat, url('images/IMG-1139.JPG') no-repeat;
+  margin: 0;
+  background-position: left, center, right;
+  background-size: 33.5% 100%;
+}
+#slides .slide_2 {
+  background: url('images/IMG-1350.JPG') no-repeat, url('images/C19B1539-1DBE-4450-848E-B86BA21B2A7C.JPG') no-repeat, url('images/80EC83B1-A374-44A2-8611-7D6BBCC37816.JPG') no-repeat;
+  margin: 0;
+  background-position: left, center, right;
+  background-size: 33.5% 100%;
+}
+#slides .slide_3 {
+  background: url('images/IMG-1232.JPG') no-repeat, url('images/IMG-1233.JPG') no-repeat, url('images/82CD896F-A4FC-4BD6-BAEB-382546D89552-80FFCA44-574A-4B72-8AC2-262668603740.JPG') no-repeat;
+  margin: 0;
+  background-position: left, center, right;
+  background-size: 33.5% 100%;
+}
+#slides .slide_4 {
+  background: url('images/C6BD68FB-088F-45C7-B979-5A0243E7C0EF.JPG') no-repeat, url('images/F15EE8C1-05A5-49A2-A90E-0E1B23F06AB2.JPG') no-repeat;
+  margin: 0;
+  background-position: left, right;
+  background-size: contain;
+}
+#slides a{
+  text-decoration: none;
+  color: white;
+}
+#controls {
+  margin: -350px 0 0 89px;
+  width: 85%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+  
+}
+#controls label:hover {
+  opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float:right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float:left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+#bullets {
+  margin: 310px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius:100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
+}
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1),
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+     margin: 0;
+  }
+  #slides {
+     max-width: calc(100% - 140px);
+     margin: 0 auto;
+  }
+}
+
+/*box header*/
+.box-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.box-header a{
+ text-decoration: none;
+}
+.box-button{
+ padding: 2px 12px;
+  border: 2px solid #4f4848;
+  color: #4f4848;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Montserrat","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+/*box design*/
+.box-design{
+ display: grid;
+ grid-template-columns: repeat(4,425px);
+ margin-left: 90px;
+}
+.box-design img{
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: relative;
+  margin: 0px 25px 10px 25px;
+}
+.design-product-box{
+  width: 400px;
+}
+.design-product-box h4{
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.design-product-box .box-product-price{
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/*t-shirt page*/
+.title-page h1{
+ margin-left: 250px;
+ margin-top: 50px;
+ margin-bottom: -40px;
+ font-size: 70px;
+ font-weight: bold;
+}
+
+.item-holder{
+ margin-top: 100px;
+ margin-left: 100px;
+}
+
+.item-holder a{
+text-decoration: none;
+}
+.item-img-1{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Bangkok Thailand - Black (1).JPG');
+ background-size: cover;
+ transition: .5s;
+}
+.item-img-1 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-1:hover{
+ background-image: url('images/Bangkok Thailand - Black (5).JPG');
+ transition:.3s;
+}
+.item-img-1:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-2{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Breathing fish T - White (2).JPG');
+ background-size: cover;
+}
+.item-img-2 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-2:hover{
+ background-image: url('images/Breathing fish T - White (1).JPG');
+ transition:.3s;
+}
+.item-img-2:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-3{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('');
+ background-size: cover;
+}
+.item-img-3 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-3:hover{
+ background-image: url('images/Clouded euphoria t - white (1).JPG');
+ transition:.3s;
+}
+.item-img-3:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-4{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Elephant Mask T - Black Bordered (3).JPG');
+ background-size: cover;
+}
+.item-img-4 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-4:hover{
+ background-image: url('images/Elephant Mask T - White (4).JPG');
+ transition:.3s;
+}
+.item-img-4:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-5{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Face of universe t - white (2).JPG');
+ background-size: cover;
+}
+.item-img-5 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-5:hover{
+ background-image: url('');
+ transition:.3s;
+}
+.item-img-5:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-6{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Fishball Eye - White Bordered (3).JPG');
+ background-size: cover;
+}
+.item-img-6 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-6:hover{
+ background-image: url('images/Fishball Eye - White Bordered (1).JPG');
+ transition:.3s;
+}
+.item-img-6:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-7{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('');
+ background-size: cover;
+}
+.item-img-7 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-7:hover{
+ background-image: url('images/T designs/Inverted Classroom t - design.JPG');
+ transition:.3s;
+}
+.item-img-7:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-8{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Peaceful protest t - white (2).JPG');
+ background-size: cover;
+}
+.item-img-8 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-8:hover{
+ background-image: url('images/Peaceful protest t - white (1).JPG');
+ transition:.3s;
+}
+.item-img-8:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-img-9{
+ float: left;
+ margin: 0px 25px 50px 25px;
+ height: 400px;
+ width: 400px;
+ background-image: url('images/Runny Mango Sunset t - White Bordered.JPG');
+ background-size: cover;
+}
+.item-img-9 h3{
+ text-align: center;
+ position: relative;
+ top: 300px;
+ visibility: hidden;
+ color: white;
+}
+.item-img-9:hover{
+ background-image: url('images/Runny Mango sunset t - white (5).JPG');
+ transition:.3s;
+}
+.item-img-9:hover h3{
+ visibility: visible;
+ transition: ease-in-out;
+ transition-duration: .3s;
+}
+.item-t img{
+ max-height: 400px;
+ border: 4px solid orange;
+ margin: 0px 25px 50px 25px;
+}
+
+/*Individual Tshirt Page*/
+.content-tshirt{
+ margin-left: 200px;
+ float: left;
+ display: flex;
+}
+.tshirt-sample-img{
+ 
+}
+.back-button{
+ margin-left: 100px;
+ color: gray;
+}
+.back-button a{
+ list-style-type: none;
+ color: rgb(0, 0, 0);
+}
+.back-button a:hover{
+text-decoration: none;
+color: black;
+}
+div#carouselExampleIndicators{
+ margin: 100px 0px 50px 100px;
+ height: 700px;
+ width: 700px;
+}
+.col-md-7{
+ /*
+ position: relative;
+ bottom: 850px;
+ left: 800px;
+ */
+}
+.prev-next-navbtns{
+ position: relative;
+ left: 390px;
+}
+.prev-next-navbtns a{
+ color: black;
+}
+.prev-next-navbtns a:hover{
+ color: black;
+ text-decoration: none;
+}
+.tshirt-textbox{
+ background: #ffa357;
+ width: 50px;
+ margin-top: 50px;
+ padding: 3px 0px 3px 0px;
+ color: white;
+ font-size: 12px;
+ font-weight: bold;
+ text-align: center;
+ text-decoration: none;
+}
+.textbox-link{
+ text-decoration: none;
+}
+.tshirt-price{
+ font-weight: bold;
+ font-size: 20px;
+ color: rgb(255, 86, 24);
+}
+.color-picker{
+ margin-top: -10px;
+}
+#color-circle{
+ height: 20px;
+ width: 20px;
+ border-radius: 20px;
+ border: 1.5px solid rgb(168, 168, 168);
+ margin-right: 10px;
+ float: left;
+}
+#color-circle.black{
+ background-color: black;
+}
+#color-circle.white{
+ background-color: rgb(255, 255, 255);
+}
+#dropdownMenuButton{
+ width: 475px;
+ background-color: white;
+}
+.dropdown-menu{
+ width: 65%;
+}
+.quantity-control{
+ width: 75px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+#nav-row, .sidebar-btn, .border-line{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+div#nav-row{
+ line-height: 50px;
+ background-color: white;
+}
+
+div#nav-row ul.menu-row{
+  float: right;
+}
+
+div#nav-row ul.menu-row li{
+  list-style-type: none;
+  float: right;
+  margin-right: 10px;
+}
+
+div#nav-row ul.menu-row li a{
+  color: black;
+  text-decoration: none;
+}
+
+div#nav-row ul.menu-row li.cart a.cart-img div{
+  height: 60px;
+  width: 55px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+  top: 5px;
+  z-index: 1;
+  background-image: url(images/Cart.PNG);
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+}
+
+div#nav-row ul.menu-row li.home a.home-img div{
+  height: 60px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  background-image: url(images/Home.PNG);
+  background-repeat: no-repeat;
+  background-size: 45px 60px;
+}
+
+div#nav-row ul.menu-row li.home a{
+  
+}
+
+div#nav-row ul.menu-row li.cart a{
+  
+}
+
+span#header.site-header{
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+
+span#header.site-header a{
+  text-decoration: none;
+  color: black;
+}
+
+span#header.site-header img.logo-img{
+  max-height: 70px;
+}
+
+span#header.site-header img.name-img{
+  position: relative;
+  bottom: 18px;
+  max-height: 90px;
+  margin: 0px 0px 10px 150px;
+
+  
+}
+
+span#header.site-header img.name-img:hovers{
+  margin: 0px 15px;
+  max-height: 70px;
+  
+}
+
+span#header.site-header img.animated-logo{
+  max-height: 65px;
+  visibility:hidden;
+  
+}
+
+.sidebar-btn{
+  position: fixed;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+  height: 40px;
+  width: 56px;
+  text-align: center;
+  background: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.sidebar-btn.click{
+  left: 265px;
+  position: fixed;
+}
+.sidebar-btn img{
+  max-height: 40px;
+}
+
+.sidebar-btn.click img:before{
+
+}
+
+.sidebar-btn.click span:before{
+  
+}
+
+.sidebar{
+  position: fixed;
+  z-index: 1;
+  bottom: 0px; 
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  line-height: 65px;
+  background: #f78989;
+  transition: left 0.4s ease;
+}
+
+.sidebar.show{
+  left: 0px;
+}
+
+.sidebar .blank-top{
+  height: 55px;
+  width: 250px;
+  background: #ffa4a4;
+}
+
+nav.sidebar ul.sidebar-options{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  background: #f78989;
+}
+
+nav.sidebar ul.sidebar-options li{
+  line-height: 65px;
+}
+
+nav.sidebar ul.sidebar-options li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 15px;
+  font-weight: 550;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  
+}
+
+nav.sidebar ul.sidebar-options li a:hover{
+  background: #ffa4a4;
+  width: auto;
+  border-left: 3px solid white;
+}
+
+.border-line{
+  border-top: 10px solid rgb(218, 218, 218);
+  width: 100%;
+}
+
+.content-tshirt{
+  margin-left: 200px;
+  float: left;
+  display: flex;
+}
+.tshirt-sample-img{
+  
+}
+.back-button{
+  margin-left: 100px;
+  color: gray;
+}
+.back-button a{
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+}
+.back-button a:hover{
+ text-decoration: none;
+ color: black;
+}
+div#carouselExampleIndicators{
+  margin: 100px 0px 50px 100px;
+  height: 700px;
+  width: 700px;
+}
+.col-md-7{
+  /*
+  position: relative;
+  bottom: 850px;
+  left: 800px;
+  */
+}
+.prev-next-navbtns{
+  position: relative;
+  left: 390px;
+}
+.prev-next-navbtns a{
+  color: black;
+}
+.prev-next-navbtns a:hover{
+  color: black;
+  text-decoration: none;
+}
+.tshirt-textbox{
+  background: #ffa357;
+  width: 50px;
+  margin-top: 50px;
+  padding: 3px 0px 3px 0px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.textbox-link{
+  text-decoration: none;
+}
+.tshirt-price{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 86, 24);
+}
+.color-picker{
+  margin-top: -10px;
+}
+#color-circle{
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  border: 1.5px solid rgb(168, 168, 168);
+  margin-right: 10px;
+  float: left;
+}
+#color-circle.black{
+  background-color: black;
+}
+#color-circle.white{
+  background-color: rgb(255, 255, 255);
+}
+#dropdownMenuButton{
+  width: 475px;
+  background-color: white;
+}
+.dropdown-menu{
+  width: 65%;
+}
+.quantity-control{
+  width: 75px;
+}
+
